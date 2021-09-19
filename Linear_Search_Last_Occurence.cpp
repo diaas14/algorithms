@@ -10,9 +10,8 @@
 class Solution {
   int lastOccurence(vector<int> arr, int num) {
     int pos=-1;
-    for (int i=0; i<arr.size(); i++) {
+    for (int i=0; i<arr.size(); i++)
       if (arr[i] == num) pos = i+1;
-    }
     return pos;
   }
 }
