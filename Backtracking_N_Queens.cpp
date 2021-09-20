@@ -13,10 +13,13 @@ public:
     vector<vector<string>> solutions;
     
     bool isValidMove(vector<string>& board, int row, int col) {
+        // same column upwards
         for (int i=row-1; i>=0; i--)
             if (board[i][col] == 'Q') return false;
+        // diagonally upwards (left)
         for (int i=row-1, j=col-1; i>=0 && j>=0; i--, j--) 
             if (board[i][j] == 'Q') return false;
+        // diagonally upwards (right)
         for (int i=row-1, j=col+1; i>=0 && j<board.size(); i--, j++) 
             if (board[i][j] == 'Q') return false;
         return true;
@@ -25,13 +28,18 @@ public:
     // dfs
     void NQueens(vector<string>& board, int row) {
         if (row == board.size()) {
+            // valid arrangement
             solutions.push_back(board);
             return;
         }
         for (int i=0; i<board.size(); i++) {
             if (isValidMove(board, row, i)) {
                 board[row][i] = 'Q';
+                // this step will eventually lead to an arrangement
+                // being pushed in the solutions vector depending on whether
+                // or not its a valid solution
                 NQueens(board, row + 1);
+                // unset it as we need to try other arrangements
                 board[row][i] = '.';
             }  
         }   
