@@ -1,10 +1,11 @@
 /**
+ * 77. Combinations
  * Given two integers n and k, 
  * return all possible combinations of k numbers out of the range [1, n].
  * You may return the answer in any order.
  */
 
-class Solution {
+class Combinations {
     
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> combs = new ArrayList<List<Integer>>();
