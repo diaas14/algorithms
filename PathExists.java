@@ -9,7 +9,7 @@
  * return true if there is a valid path from source to destination, or false otherwise.
  */
 
-class Solution {
+class PathExists {
     
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         ArrayList<Integer>[] graph = new ArrayList[n];
