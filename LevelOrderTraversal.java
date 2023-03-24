@@ -15,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class LevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         List<List<Integer>> nodesList = new ArrayList<>();
