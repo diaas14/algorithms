@@ -4,7 +4,7 @@
  * You can return the answer in any order.
  */
 
-class Solution {
+class Permutations {
     
     static void permutation(List<List<Integer>> list, List<Integer> nums, List<Integer> perm) {
         if (nums.size() == 0) {
