@@ -2,7 +2,12 @@
  * Question:
  * Given 2 strings, P and T, find the number of occurrences of P in T.
  */
- 
+
+# include <vector>
+# include <string>
+
+using namespace std;
+
 void prefix_matching(vector<int>& lps, string pattern) {
 	int len = 0, i = 1;
 	while (i < pattern.size()) {

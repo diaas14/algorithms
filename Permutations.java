@@ -4,6 +4,9 @@
  * You can return the answer in any order.
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Permutations {
     
     static void permutation(List<List<Integer>> list, List<Integer> nums, List<Integer> perm) {

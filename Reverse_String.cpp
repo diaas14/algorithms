@@ -3,7 +3,10 @@
  * Write a function that reverses a string. 
  * The input string is given as an array of characters s.
  */
- 
+# include <vector>
+# include <string>
+
+using namespace std;
 class Solution {
 public:
     void reverseString(vector<char>& s) {

@@ -6,6 +6,10 @@
  * in the array if it exists in it, otherwise print -1. 
  * Consider this array to be 1 indexed.
  */
+# include <vector>
+# include <string>
+
+using namespace std;
 
 class Solution {
   int lastOccurence(vector<int>& arr, int num) {
@@ -14,4 +18,4 @@ class Solution {
       if (arr[i] == num) pos = i+1;
     return pos;
   }
-}
+};

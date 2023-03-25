@@ -3,6 +3,11 @@
   * Given an array, rotate the array to the right by k steps, 
   * where k is non-negative.
   */
+# include <vector>
+# include <string>
+# include <algorithm>
+
+using namespace std;
 
 class Solution {
     

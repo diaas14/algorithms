@@ -5,6 +5,9 @@
  * You may return the answer in any order.
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Combinations {
     
     public List<List<Integer>> combine(int n, int k) {

@@ -10,6 +10,11 @@
  * You may not use the same element twice.
  */
 
+# include <vector>
+# include <string>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {

@@ -6,6 +6,11 @@
  * You must write an algorithm with O(log n) runtime complexity.
  */
 
+# include <vector>
+# include <string>
+
+using namespace std;
+
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
